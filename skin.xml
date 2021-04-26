@@ -1,0 +1,67 @@
+<skin>
+	<manifest>
+		<title>Pioneered</title>
+		<author>Sven Boekelder</author>
+		<version>0.0.1</version>
+		<description>Pioneer inspired theme for smaller screen resolutions</description>
+		<language>*</language>
+		<license>GPL</license>
+		<attributes>
+			<attribute config_key="[Master],num_decks">2</attribute>
+			<attribute config_key="[Master],num_samplers">16</attribute>
+			<attribute persist="true" config_key="[Master],maximize_library">0</attribute>
+			<attribute persist="true" config_key="[Master],skin_settings">0</attribute>
+			<attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
+			<attribute persist="true" config_key="[VinylControl],show_vinylcontrol">0</attribute>
+			<attribute persist="true" config_key="[PreviewDeck],show_previewdeck">0</attribute>
+			<attribute persist="true" config_key="[Library],show_coverart">0</attribute>
+		</attributes>
+	</manifest>
+
+	<ObjectName>Mixxx</ObjectName>
+	<Style src="skin:style.qss"/>
+	<MinimumSize>100,100</MinimumSize>
+	<SizePolicy>me,me</SizePolicy>
+	<Layout>vertical</Layout>
+
+	<LaunchImageStyle></LaunchImageStyle>
+
+	<Children>
+		<!-- TODO: set variables -->
+
+		<SingletonDefinition>
+			<ObjectName>Waveforms_Singleton</ObjectName>
+			<Children>
+				<Template src="skin:waveforms.xml"/>
+			</Children>
+		</SingletonDefinition>
+		<SingletonDefinition>
+			<ObjectName>Library_Singleton</ObjectName>
+			<Children>
+				<Template src="skin:library.xml"/>
+			</Children>
+		</SingletonDefinition>
+
+		<WidgetGroup>
+			<ObjectName>SkinContainer</ObjectName>
+			<Layout>vertical</Layout>
+			<SizePolicy>me,me</SizePolicy>
+			<Children>
+
+				<WidgetGroup>
+					<Layout>vertical</Layout>
+					<SizePolicy>me,me</SizePolicy>
+					<Children>
+						<Template src="skin:topbar.xml"/>
+						<SingletonContainer>
+							<ObjectName>Waveforms_Singleton</ObjectName>
+						</SingletonContainer>
+						<SingletonContainer>
+							<ObjectName>Library_Singleton</ObjectName>
+						</SingletonContainer>
+					</Children>
+				</WidgetGroup>
+			</Children>
+		</WidgetGroup>
+	</Children>
+</skin>

@@ -1,0 +1,10 @@
+#Mixxx {
+  color: #fff;
+  font-size: 12px/12px;
+}
+
+#Clock {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}

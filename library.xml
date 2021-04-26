@@ -1,0 +1,28 @@
+<Template>
+  <WidgetGroup>
+    <SizePolicy>me,e</SizePolicy>
+    <Layout>vertical</Layout>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>LibraryContainer</ObjectName>
+        <SizePolicy>me,me</SizePolicy>
+        <Layout>horizontal</Layout>
+        <Children>
+          <LibrarySidebar></LibrarySidebar>
+          <WidgetGroup>
+            <SizePolicy>me,me</SizePolicy>
+            <Layout>vertical</Layout>
+            <Children>
+              <SearchBox></SearchBox>
+              <Library>
+                <BgColor>#acacac</BgColor>
+                <FgColor>#75001a</FgColor>
+                <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
+              </Library>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>

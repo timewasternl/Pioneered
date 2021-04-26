@@ -1,0 +1,35 @@
+<Template>
+  <WidgetGroup>
+    <ObjectName>Topbar</ObjectName>
+    <Layout>horizontal</Layout>
+    <SizePolicy>me,min</SizePolicy>
+    <MaximumSize>-1,50</MaximumSize>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>AlignTop</ObjectName>
+        <Layout>horizontal</Layout>
+        <SizePolicy>me,min</SizePolicy>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>Controls</ObjectName>
+            <Layout>horizontal</Layout>
+            <SizePolicy>me,min</SizePolicy>
+            <Children>
+              <WidgetGroup>
+                <SizePolicy>me,me</SizePolicy>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <Time>
+                    <TooltipId>time</TooltipId>
+                    <ObjectName>Clock</ObjectName>
+                    <Align>center</Align>
+                  </Time>
+                </Children>
+              </WidgetGroup>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>
