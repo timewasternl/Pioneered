@@ -1,7 +1,8 @@
 /* Pioneer Colours:
 
-Play button: #6EE128
-Cue button: #EB870F
+Play button: #6ee128
+Cue button: #eb870f
+Tabs on top: #c3d541
 
 */
 
@@ -24,10 +25,20 @@ Cue button: #EB870F
 
 #TabControls WPushButton {
   background-color: black;
-  border: 2px solid #6ee128;
-  color: #6ee128;
   font-weight: bold;
-  margin: 0 25px;
+  margin: 0 10%;
+  max-width: 250px;
+  text-transform: uppercase;
+}
+
+#TabControls WPushButton[value="0"] {
+  border: 2px solid gray;
+  color: gray;
+}
+
+#TabControls WPushButton[value="1"] {
+  border: 2px solid #c3d541;
+  color: #c3d541;
 }
 
 QMenuBar {

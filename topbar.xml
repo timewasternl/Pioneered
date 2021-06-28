@@ -16,13 +16,16 @@
         <SizePolicy>me,me</SizePolicy>
         <Children>
           <Template src="skin:tab.xml">
-            <SetVariable name="tabname">Overview</SetVariable>
+            <SetVariable name="tab_name">Overview</SetVariable>
+            <SetVariable name="config_key">overview</SetVariable>
           </Template>
           <Template src="skin:tab.xml">
-            <SetVariable name="tabname">Browse</SetVariable>
+            <SetVariable name="tab_name">Browse</SetVariable>
+            <SetVariable name="config_key">library</SetVariable>
           </Template>
           <Template src="skin:tab.xml">
-            <SetVariable name="tabname">Effects/Samples</SetVariable>
+            <SetVariable name="tab_name">Effects/Samples</SetVariable>
+            <SetVariable name="config_key">effects_samples</SetVariable>
           </Template>
         </Children>
       </WidgetGroup>

@@ -1,0 +1,7 @@
+<Template>
+  <Label>
+    <SizePolicy>me,me</SizePolicy>
+    <Text>Nothing to see here yet</Text>
+    <Align>X,Y</Align>
+  </Label>
+</Template>

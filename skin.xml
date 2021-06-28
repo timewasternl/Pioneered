@@ -41,12 +41,18 @@
 				<Template src="skin:waveforms.xml"/>
 			</Children>
 		</SingletonDefinition>
-		<!-- <SingletonDefinition>
+		<SingletonDefinition>
 			<ObjectName>Library_Singleton</ObjectName>
 			<Children>
 				<Template src="skin:library.xml"/>
 			</Children>
-		</SingletonDefinition> -->
+		</SingletonDefinition>
+		<SingletonDefinition>
+			<ObjectName>EffectsSamples_Singleton</ObjectName>
+			<Children>
+				<Template src="skin:effects_samples.xml"/>
+			</Children>
+		</SingletonDefinition>
 
 		<WidgetGroup>
 			<ObjectName>SkinContainer</ObjectName>
@@ -61,12 +67,19 @@
 						<SingletonContainer>
 							<ObjectName>Topbar_Singleton</ObjectName>
 						</SingletonContainer>
-						<SingletonContainer>
-							<ObjectName>Waveforms_Singleton</ObjectName>
-						</SingletonContainer>
-						<SingletonContainer>
-							<ObjectName>Library_Singleton</ObjectName>
-						</SingletonContainer>
+						<WidgetStack currentpage="[Tab],current" persist="true">
+							<Children>
+								<SingletonContainer trigger="[Tab],overview" on_hide_select="0">
+									<ObjectName>Waveforms_Singleton</ObjectName>
+								</SingletonContainer>
+								<SingletonContainer trigger="[Tab],library" on_hide_select="0">
+									<ObjectName>Library_Singleton</ObjectName>
+								</SingletonContainer>
+								<SingletonContainer trigger="[Tab],effects_samples" on_hide_select="0">
+									<ObjectName>EffectsSamples_Singleton</ObjectName>
+								</SingletonContainer>
+							</Children>
+						</WidgetStack>
 					</Children>
 				</WidgetGroup>
 			</Children>
