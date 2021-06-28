@@ -1,5 +1,18 @@
+/* Pioneer Colours:
+
+Play button: #6EE128
+Cue button: #EB870F
+
+*/
+
+/* DEBUG */
+* {
+  border: 1px solid rgba(255,255,255,0.1);
+}
+/* END */
+
 #Mixxx {
-  color: #fff;
+  color: white;
   font-size: 12px/12px;
 }
 
@@ -7,4 +20,16 @@
   color: #fff;
   font-size: 15px;
   text-align: center;
+}
+
+#TabControls WPushButton {
+  background-color: black;
+  border: 2px solid #6ee128;
+  color: #6ee128;
+  font-weight: bold;
+  margin: 0 25px;
+}
+
+QMenuBar {
+  color: gray;
 }

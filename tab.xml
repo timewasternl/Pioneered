@@ -1,0 +1,11 @@
+<Template>
+  <PushButton>
+    <ObjectName>TabButton<Variable name="tabname"/></ObjectName>
+    <NumberStates>1</NumberStates>
+    <Size>12me,12me</Size>
+    <State>
+      <Number>0</Number>
+      <Text><Variable name="tabname"/></Text>
+    </State>
+  </PushButton>
+</Template>

@@ -2,16 +2,17 @@
   <WidgetGroup>
     <ObjectName>Waveform_<Variable name="channel"/></ObjectName>
     <Layout>horizontal</Layout>
+    <SizePolicy>me,me</SizePolicy>
     <Children>
       <Visual>
         <TooltipId>waveform_display</TooltipId>
         <ObjectName>Waveform</ObjectName>
-        <Size>0me,22me</Size>
+        <SizePolicy>me,me</SizePolicy>
         <Channel><Variable name="channel"/></Channel>
-        <BgColor>#acacac</BgColor>
-        <SignalColor>#75001a</SignalColor>
+        <BgColor>#000</BgColor>
+        <SignalColor>#222</SignalColor>
         <BeatColor>#fff</BeatColor>
-        <PlayPosColor>#f80</PlayPosColor>
+        <PlayPosColor>#fff</PlayPosColor>
       </Visual>
     </Children>
   </WidgetGroup>

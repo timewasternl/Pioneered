@@ -20,7 +20,7 @@
 
 	<ObjectName>Mixxx</ObjectName>
 	<Style src="skin:style.qss"/>
-	<MinimumSize>100,100</MinimumSize>
+	<MinimumSize>200,100</MinimumSize>
 	<SizePolicy>me,me</SizePolicy>
 	<Layout>vertical</Layout>
 
@@ -30,17 +30,23 @@
 		<!-- TODO: set variables -->
 
 		<SingletonDefinition>
+			<ObjectName>Topbar_Singleton</ObjectName>
+			<Children>
+				<Template src="skin:topbar.xml"/>
+			</Children>
+		</SingletonDefinition>
+		<SingletonDefinition>
 			<ObjectName>Waveforms_Singleton</ObjectName>
 			<Children>
 				<Template src="skin:waveforms.xml"/>
 			</Children>
 		</SingletonDefinition>
-		<SingletonDefinition>
+		<!-- <SingletonDefinition>
 			<ObjectName>Library_Singleton</ObjectName>
 			<Children>
 				<Template src="skin:library.xml"/>
 			</Children>
-		</SingletonDefinition>
+		</SingletonDefinition> -->
 
 		<WidgetGroup>
 			<ObjectName>SkinContainer</ObjectName>
@@ -52,7 +58,9 @@
 					<Layout>vertical</Layout>
 					<SizePolicy>me,me</SizePolicy>
 					<Children>
-						<Template src="skin:topbar.xml"/>
+						<SingletonContainer>
+							<ObjectName>Topbar_Singleton</ObjectName>
+						</SingletonContainer>
 						<SingletonContainer>
 							<ObjectName>Waveforms_Singleton</ObjectName>
 						</SingletonContainer>

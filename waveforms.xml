@@ -1,20 +1,15 @@
 <Template>
   <WidgetGroup>
     <ObjectName>Waveforms</ObjectName>
+    <Layout>vertical</Layout>
     <SizePolicy>me,min</SizePolicy>
     <Children>
-      <WidgetGroup>
-        <Layout>vertical</Layout>
-        <SizePolicy>me,min</SizePolicy>
-        <Children>
-          <Template src="skin:waveform.xml">
-            <SetVariable name="channel">1</SetVariable>
-          </Template>
-          <Template src="skin:waveform.xml">
-            <SetVariable name="channel">2</SetVariable>
-          </Template>
-        </Children>
-      </WidgetGroup>
+      <Template src="skin:waveform.xml">
+        <SetVariable name="channel">1</SetVariable>
+      </Template>
+      <Template src="skin:waveform.xml">
+        <SetVariable name="channel">2</SetVariable>
+      </Template>
     </Children>
   </WidgetGroup>
 </Template>
