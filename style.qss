@@ -2,31 +2,134 @@
 
 Play button: #6ee128
 Cue button: #eb870f
+Slip button: #d73535
 Tabs on top: #c3d541
+Title bg: #112f5c
 
 */
 
-/* DEBUG */
+/* DEBUG
 * {
   border: 1px solid rgba(255,255,255,0.1);
 }
 /* END */
 
-#Mixxx {
+QMenuBar {
+  background-color: black;
+  color: gray;
+}
+
+#Deck {
+  border: 1px solid transparent;
+}
+
+#Deck[highlight="1"] {
+  border: 1px solid white;
+}
+
+#DeckTitles, #DeckMetadata, #DeckWaveformOverview {
+  margin: 0 4px;
+}
+
+#DeckBPM {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 2px 5px;
+}
+
+#DeckBPMTitle {
+  margin: 0 20px;
+}
+
+#DeckHeader {
+  background-color: #112f5c;
+  padding: 2px;
+}
+
+#DeckTitle, #DeckTitleNote {
+  font-size: 24px;
   color: white;
-  font-size: 12px/12px;
+}
+
+#DeckTitles WLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#DeckTrackTimeWrapper {
+  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
+}
+
+#DeckMetadata WTrackProperty, #DeckMetadata WNumber {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#DeckTitleNote {
+  margin: 0 2px;
+}
+
+#DeckOverview {
+  margin: 50% 0;
+}
+
+#DeckChannelTitle {
+  border: 2px solid transparent;
+}
+
+#DeckChannelTitleWrapper {
+  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
+}
+
+#DeckChannelTitle[highlight="1"] {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-radius: 20px;
+}
+
+#Library {
+}
+
+#Mixxx {
+  background-color: black;
+}
+
+#Mixxx WLabel{
+  color: white;
+  font-family: 'Open Sans';
 }
 
 #Clock {
   color: #fff;
-  font-size: 15px;
-  text-align: center;
+  font-size: 16px;
+}
+
+#SearchBox {
+  background-color: #112f5c;
+  border-radius: 0;
+  font-size: 24px;
+  padding: 4px;
+}
+
+#SidebarContainer {
+  background-color: #112f5c;
+}
+
+#SidebarButton {
+  background-color: rgba(0,0,0,0.4);
+  border: 2px solid #ee5f00;
+  border-radius: 4px;
+  color: #ee5f00;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 4px;
 }
 
 #TabControls WPushButton {
   background-color: black;
   font-weight: bold;
-  margin: 0 10%;
+  margin: 10px 10%;
   max-width: 250px;
   text-transform: uppercase;
 }
@@ -39,8 +142,4 @@ Tabs on top: #c3d541
 #TabControls WPushButton[value="1"] {
   border: 2px solid #c3d541;
   color: #c3d541;
-}
-
-QMenuBar {
-  color: gray;
 }

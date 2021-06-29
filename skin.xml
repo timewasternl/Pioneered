@@ -20,15 +20,13 @@
 
 	<ObjectName>Mixxx</ObjectName>
 	<Style src="skin:style.qss"/>
-	<MinimumSize>200,100</MinimumSize>
+	<MinimumSize>480,360</MinimumSize>
 	<SizePolicy>me,me</SizePolicy>
 	<Layout>vertical</Layout>
 
 	<LaunchImageStyle></LaunchImageStyle>
 
 	<Children>
-		<!-- TODO: set variables -->
-
 		<SingletonDefinition>
 			<ObjectName>Topbar_Singleton</ObjectName>
 			<Children>
@@ -36,9 +34,9 @@
 			</Children>
 		</SingletonDefinition>
 		<SingletonDefinition>
-			<ObjectName>Waveforms_Singleton</ObjectName>
+			<ObjectName>Overview_Singleton</ObjectName>
 			<Children>
-				<Template src="skin:waveforms.xml"/>
+				<Template src="skin:overview.xml"/>
 			</Children>
 		</SingletonDefinition>
 		<SingletonDefinition>
@@ -70,7 +68,7 @@
 						<WidgetStack currentpage="[Tab],current" persist="true">
 							<Children>
 								<SingletonContainer trigger="[Tab],overview" on_hide_select="0">
-									<ObjectName>Waveforms_Singleton</ObjectName>
+									<ObjectName>Overview_Singleton</ObjectName>
 								</SingletonContainer>
 								<SingletonContainer trigger="[Tab],library" on_hide_select="0">
 									<ObjectName>Library_Singleton</ObjectName>

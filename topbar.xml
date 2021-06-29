@@ -2,14 +2,18 @@
   <WidgetGroup>
     <ObjectName>Topbar</ObjectName>
     <Layout>vertical</Layout>
-    <Size>0me,50f</Size>
+    <Size>0me,75f</Size>
     <Children>
-      <Time>
-        <TooltipId>time</TooltipId>
-        <ObjectName>Clock</ObjectName>
-        <SizePolicy>me,max</SizePolicy>
-        <Align>X</Align>
-      </Time>
+      <WidgetGroup>
+        <ObjectName>Topbar_Info</ObjectName>
+        <Layout>horizontal</Layout>
+        <Children>
+          <Time>
+            <TooltipId>time</TooltipId>
+            <ObjectName>Clock</ObjectName>
+          </Time>
+        </Children>
+      </WidgetGroup>
       <WidgetGroup>
         <ObjectName>TabControls</ObjectName>
         <Layout>horizontal</Layout>

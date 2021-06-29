@@ -1,3 +1,127 @@
 <Template>
-
+  <WidgetGroup>
+    <ObjectName>Deck</ObjectName>
+    <Layout>vertical</Layout>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>DeckHeader</ObjectName>
+        <Layout>horizontal</Layout>
+        <Children>
+          <Label>
+            <ObjectName>DeckTitleNote</ObjectName>
+            <Text>&#9834;</Text>
+          </Label>
+          <TrackProperty>
+            <ObjectName>DeckTitle</ObjectName>
+            <TooltipId>track_title</TooltipId>
+            <SizePolicy>me,25f</SizePolicy>
+            <Property>title</Property>
+            <Channel><Variable name="channel"/></Channel>
+            <Elide>right</Elide>
+          </TrackProperty>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>DeckTitles</ObjectName>
+        <Layout>horizontal</Layout>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>DeckChannelTitleWrapper</ObjectName>
+            <Layout>horizontal</Layout>
+            <Size>100max,0me</Size>
+            <Children>
+              <Label>
+                <ObjectName>DeckChannelTitle</ObjectName>
+                <Text>Deck<Variable name="channel"/></Text>
+                <Connection>
+                  <ConfigKey>[Channel<Variable name="channel"/>],play</ConfigKey>
+                  <BindProperty>highlight</BindProperty>
+                </Connection>
+              </Label>
+            </Children>
+          </WidgetGroup>
+          <Label>
+            <ObjectName>DeckTrackTimeTitle</ObjectName>
+            <Text>Time</Text>
+            <Size>200me,0me</Size>
+          </Label>
+          <Label>
+            <ObjectName>DeckBPMTitle</ObjectName>
+            <Text>BPM</Text>
+            <Size>150f,0me</Size>
+          </Label>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>DeckMetadata</ObjectName>
+        <Layout>horizontal</Layout>
+        <Children>
+          <TrackProperty>
+            <ObjectName>DeckTrackNumber</ObjectName>
+            <TooltipId>track_number</TooltipId>
+            <Size>100max,0me</Size>
+            <Property>track_number</Property>
+            <Channel><Variable name="channel"/></Channel>
+            <Elide>right</Elide>
+          </TrackProperty>
+          <WidgetGroup>
+            <ObjectName>DeckTrackTimeWrapper</ObjectName>
+            <Layout>horizontal</Layout>
+            <Size>200me,0me</Size>
+            <Align>left</Align>
+            <Children>
+              <NumberPos>
+                <ObjectName>DeckTrackTime</ObjectName>
+                <Size>200max,0me</Size>
+                <TooltipId>track_time</TooltipId>
+                <NumberOfDigits>6</NumberOfDigits>
+                <Channel><Variable name="channel"/></Channel>
+              </NumberPos>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <ObjectName>DeckBPMWrapper</ObjectName>
+            <Layout>horizontal</Layout>
+            <Size>150f,0me</Size>
+            <Children>
+              <NumberBpm>
+                <ObjectName>DeckBPM</ObjectName>
+                <TooltipId>visual_bpm</TooltipId>
+                <Channel><Variable name="channel"/></Channel>
+                <Connection>
+                  <ConfigKey>[Channel<Variable name="channel"/>],visual_bpm</ConfigKey>
+                </Connection>
+              </NumberBpm>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>DeckWaveformOverview</ObjectName>
+        <Layout>horizontal</Layout>
+        <Size>0me,50f</Size>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>DeckOverviewContainer</ObjectName>
+            <Layout>vertical</Layout>
+            <Size>0me,50f</Size>
+            <Children>
+              <Overview>
+                <ObjectName>DeckOverview</ObjectName>
+                <Size>0me,100f</Size>
+                <Channel><Variable name="channel"/></Channel>
+                <Connection>
+                  <ConfigKey>[Channel<Variable name="channel"/>],playposition</ConfigKey>
+                </Connection>
+              </Overview>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+    </Children>
+    <Connection>
+      <ConfigKey>[Channel<Variable name="channel"/>],play</ConfigKey>
+      <BindProperty>highlight</BindProperty>
+    </Connection>
+  </WidgetGroup>
 </Template>

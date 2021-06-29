@@ -1,13 +1,12 @@
 <Template>
   <WidgetGroup>
-    <ObjectName>Waveform_<Variable name="channel"/></ObjectName>
+    <ObjectName>Waveform_Channel<Variable name="channel"/></ObjectName>
     <Layout>horizontal</Layout>
-    <SizePolicy>me,me</SizePolicy>
+    <Size>0me,50me</Size>
     <Children>
       <Visual>
         <TooltipId>waveform_display</TooltipId>
-        <ObjectName>Waveform</ObjectName>
-        <SizePolicy>me,me</SizePolicy>
+        <ObjectName>Waveform<Variable name="channel"/></ObjectName>
         <Channel><Variable name="channel"/></Channel>
         <BgColor>#000</BgColor>
         <SignalColor>#222</SignalColor>
