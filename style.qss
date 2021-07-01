@@ -71,7 +71,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
   font-size: 42px;
 }
 
-#TrackNumberContainer {
+#DeckTrackNumberContainer {
   margin: 0 4px;
 }
 

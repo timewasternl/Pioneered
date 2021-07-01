@@ -26,23 +26,27 @@
         <Layout>horizontal</Layout>
         <Children>
           <WidgetGroup>
-            <ObjectName>TrackNumberContainer</ObjectName>
+            <ObjectName>DeckTrackNumberContainer</ObjectName>
             <Layout>vertical</Layout>
             <Size>100max,0me</Size>
             <Children>
               <WidgetGroup>
-                <ObjectName>DeckChannelTitleWrapper</ObjectName>
+                <ObjectName>DeckChannelTitleContainer</ObjectName>
                 <Layout>vertical</Layout>
-                <Size>i,25max</Size>
+                <Size>0me,0me</Size>
                 <Children>
                   <WidgetGroup>
                     <ObjectName>DeckChannelTitleWrapper</ObjectName>
                     <Layout>horizontal</Layout>
+                    <Size>0me,0me</Size>
                     <Children>
                       <Label>
                         <ObjectName>DeckPlayingLeft</ObjectName>
                         <Text>((</Text>
-                        <Style>color: #d73535;</Style> <!-- To override basic style -->
+                        <Style>
+                          color: #d73535;
+                        </Style>
+                        <!-- To override basic style -->
                         <Connection>
                           <ConfigKey>[Channel<Variable name="channel"/>],play</ConfigKey>
                           <BindProperty>visible</BindProperty>
@@ -51,11 +55,15 @@
                       <Label>
                         <ObjectName>DeckChannelTitle</ObjectName>
                         <Text>Deck<Variable name="channel"/></Text>
+                        <Size>max,25f</Size>
                       </Label>
                       <Label>
                         <ObjectName>DeckPlayingRight</ObjectName>
                         <Text>))</Text>
-                        <Style>color: #d73535</Style> <!-- To override basic style -->
+                        <Style>
+                          color:#d73535
+                        </Style>
+                        <!-- To override basic style -->
                         <Connection>
                           <ConfigKey>[Channel<Variable name="channel"/>],play</ConfigKey>
                           <BindProperty>visible</BindProperty>
@@ -64,33 +72,42 @@
                     </Children>
                   </WidgetGroup>
                   <WidgetGroup>
-                    <ObjectName>TrackNumberTitleWrapper</ObjectName>
-                    <Layout>horizontal</Layout>
+                    <ObjectName>TrackNumberContainer</ObjectName>
+                    <Layout>vertical</Layout>
+                    <Size>0me,60max</Size>
                     <Children>
-                      <Label>
-                        <ObjectName>TrackNumberTitle</ObjectName>
-                        <Text>Track</Text>
-                      </Label>
-                    </Children>
-                  </WidgetGroup>
-                  <WidgetGroup>
-                    <ObjectName>TrackNumberWrapper</ObjectName>
-                    <Layout>horizontal</Layout>
-                    <Children>
-                      <Label>
+                      <WidgetGroup>
+                        <ObjectName>TrackNumberTitleWrapper</ObjectName>
+                        <Layout>horizontal</Layout>
+                        <Size>10min,0me</Size>
+                        <Children>
+                          <Label>
+                            <ObjectName>TrackNumberTitle</ObjectName>
+                            <Text>Track</Text>
+                          </Label>
+                        </Children>
+                      </WidgetGroup>
+                      <WidgetGroup>
+                        <ObjectName>TrackNumberWrapper</ObjectName>
+                        <Layout>horizontal</Layout>
                         <Size>0me,0me</Size>
-                      </Label>
-                      <TrackProperty>
-                        <ObjectName>TrackNumber</ObjectName>
-                        <Size>0me,0me</Size>
-                        <TooltipId>track_number</TooltipId>
-                        <Property>track_number</Property>
-                        <Channel><Variable name="channel"/></Channel>
-                        <Elide>right</Elide>
-                      </TrackProperty>
-                      <Label>
-                        <Size>0me,0me</Size>
-                      </Label>
+                        <Children>
+                          <Label>
+                            <Size>0me,0me</Size> <!-- Hacky way to align centered -->
+                          </Label>
+                          <TrackProperty>
+                            <ObjectName>TrackNumber</ObjectName>
+                            <Size>0me,0me</Size>
+                            <TooltipId>track_number</TooltipId>
+                            <Property>track_number</Property>
+                            <Channel><Variable name="channel"/></Channel>
+                            <Elide>right</Elide>
+                          </TrackProperty>
+                          <Label>
+                            <Size>0me,0me</Size> <!-- Hacky way to align centered -->
+                          </Label>
+                        </Children>
+                      </WidgetGroup>
                     </Children>
                   </WidgetGroup>
                 </Children>
@@ -105,7 +122,7 @@
               <Label>
                 <ObjectName>DeckTrackTimeTitle</ObjectName>
                 <Text>Time</Text>
-                <Size>200me,25max</Size>
+                <Size>200me,25f</Size>
               </Label>
               <WidgetGroup>
                 <ObjectName>DeckTrackTimeWrapper</ObjectName>
@@ -132,7 +149,7 @@
               <Label>
                 <ObjectName>DeckBPMTitle</ObjectName>
                 <Text>BPM</Text>
-                <Size>0me,25max</Size>
+                <Size>0me,25f</Size>
               </Label>
               <WidgetGroup>
                 <ObjectName>DeckBPMWrapper</ObjectName>
@@ -195,10 +212,6 @@
           </Overview>
         </Children>
       </WidgetGroup>
-    </Children>
-    <Connection>
-      <ConfigKey>[Channel<Variable name="channel"/>],play</ConfigKey>
-      <BindProperty>highlight</BindProperty>
-    </Connection>
+    </Children>$
   </WidgetGroup>
 </Template>
