@@ -4,14 +4,85 @@
     <Layout>horizontal</Layout>
     <Size>0me,50me</Size>
     <Children>
+      <WidgetGroup>
+        <ObjectName>WaveformInfo</ObjectName>
+        <Layout>vertical</Layout>
+        <Size>100max,0me</Size>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>WaveformInfo_Header</ObjectName>
+            <Layout>horizontal</Layout>
+            <Size>0me,50p</Size>
+            <Children>
+              <Label>
+                <ObjectName>WaveformInfo_Title</ObjectName>
+                <Text>Deck&#160;<Variable name="channel"/></Text>
+              </Label>
+            </Children>
+            <Connection>
+              <ConfigKey>[Channel<Variable name="channel"/>],play</ConfigKey>
+              <BindProperty>highlight</BindProperty>
+            </Connection>
+          </WidgetGroup>
+          <WidgetGroup>
+            <ObjectName>WaveformInfo_Key_Container</ObjectName>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Label>
+                <Text>(b#)</Text><!-- replace with icon -->
+              </Label>
+              <Key>
+                <ObjectName>WaveformInfo_Key</ObjectName>
+                <TooltipId>visual_key</TooltipId>
+                <Connection>
+                  <ConfigKey>[Channel<Variable name="channel"/>],visual_key</ConfigKey>
+                </Connection>
+              </Key>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
       <Visual>
         <TooltipId>waveform_display</TooltipId>
         <ObjectName>Waveform<Variable name="channel"/></ObjectName>
         <Channel><Variable name="channel"/></Channel>
         <BgColor>#000</BgColor>
-        <SignalColor>#222</SignalColor>
-        <BeatColor>#fff</BeatColor>
+        <BeatColor>#40ffffff</BeatColor>
         <PlayPosColor>#fff</PlayPosColor>
+        <SignalColor>#222</SignalColor>
+        <SignalLowColor>#007de1</SignalLowColor>
+        <SignalMidColor>#007de1</SignalMidColor>
+        <SignalHighColor>#007de1</SignalHighColor>
+        <Mark>
+          <Control>cue_point</Control>
+          <Text>CUE</Text>
+          <Color>#eb870f</Color>
+          <TextColor>#eb870f</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>loop_start_position</Control>
+          <Text>LOOP IN</Text>
+          <Color>#6ee128</Color>
+          <TextColor>#6ee128</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>loop_end_position</Control>
+          <Text>LOOP OUT</Text>
+          <Color>#6ee128</Color>
+          <TextColor>#6ee128</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <MarkRange>
+          <StartControl>loop_start_position</StartControl>
+          <EndControl>loop_end_position</EndControl>
+          <EnabledControl>loop_enabled</EnabledControl>
+          <Color>#6ee128</Color>
+          <Opacity>0.8</Opacity>
+          <DisabledColor>#acacac</DisabledColor>
+          <DisabledOpacity>0.4</DisabledOpacity>
+        </MarkRange>
       </Visual>
     </Children>
   </WidgetGroup>

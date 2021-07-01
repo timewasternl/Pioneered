@@ -14,32 +14,38 @@ Title bg: #112f5c
 }
 /* END */
 
-QMenuBar {
+QMenuBar, QMenuBar::item, QMenu, QMenu::item {
   background-color: black;
   color: gray;
 }
 
+QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
+    background-color: rgba(255,255,255,0.2);
+}
+
 #Deck {
   border: 1px solid transparent;
+  border-radius: 2px;
 }
 
 #Deck[highlight="1"] {
   border: 1px solid white;
 }
 
-#DeckTitles, #DeckMetadata, #DeckWaveformOverview {
-  margin: 0 4px;
+#DeckBPMWrapper {
+  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
 }
 
 #DeckBPM {
   border: 2px solid white;
   border-radius: 5px;
-  font-size: 18px;
-  margin: 2px 5px;
+  font-size: 20px;
+  margin: 2px 0;
+  padding: 5px;
 }
 
 #DeckBPMTitle {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 #DeckHeader {
@@ -49,11 +55,11 @@ QMenuBar {
 
 #DeckTitle, #DeckTitleNote {
   font-size: 24px;
-  color: white;
 }
 
-#DeckTitles WLabel {
-  font-size: 12px;
+#DeckChannelTitle, #DeckTrackTimeTitle, #DeckBPMTitle, #DeckPlayingLeft, #DeckPlayingRight {
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -61,9 +67,25 @@ QMenuBar {
   qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
 }
 
-#DeckMetadata WTrackProperty, #DeckMetadata WNumber {
-  font-size: 28px;
+#DeckTrackTime {
+  font-size: 42px;
+}
+
+#TrackNumberContainer {
+  margin: 0 4px;
+}
+
+#TrackNumberWrapper, #DeckChannelTitleWrapper {
+  qproperty-layoutAlignment: 'AlignHCenter | AlignVCenter';
+}
+
+#TrackNumberTitle {
+  font-size: 12px;
   text-transform: uppercase;
+}
+
+#TrackNumber {
+  font-size: 24px;
 }
 
 #DeckTitleNote {
@@ -78,16 +100,6 @@ QMenuBar {
   border: 2px solid transparent;
 }
 
-#DeckChannelTitleWrapper {
-  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
-}
-
-#DeckChannelTitle[highlight="1"] {
-  border-left: 2px solid red;
-  border-right: 2px solid red;
-  border-radius: 20px;
-}
-
 #Library {
 }
 
@@ -95,13 +107,28 @@ QMenuBar {
   background-color: black;
 }
 
-#Mixxx WLabel{
+#Mixxx WLabel {
   color: white;
   font-family: 'Open Sans';
 }
 
+#BeatFX_Container {
+  border: 2px solid #222;
+  margin-left: 20px;
+  qproperty-layoutAlignment: 'AlignCenter | AlignTop';
+}
+
+#BeatFX_Header {
+  background-color: #222;
+}
+
+#BeatFX_Title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 #Clock {
-  color: #fff;
   font-size: 16px;
 }
 
@@ -117,13 +144,37 @@ QMenuBar {
 }
 
 #SidebarButton {
-  background-color: rgba(0,0,0,0.4);
-  border: 2px solid #ee5f00;
+  background-color: rgba(0,0,0,0.2);
+  border: 2px solid lightgray;
   border-radius: 4px;
-  color: #ee5f00;
+  color: lightgray;
   font-size: 24px;
   font-weight: bold;
   margin: 4px;
+}
+
+#WaveformInfo {
+  margin-right: 20px;
+}
+
+#WaveformInfo_Header {
+  background-color: #222;
+  border-top-right-radius: 25px 50px;
+}
+
+#WaveformInfo_Header[highlight="1"] {
+  border: 2px solid white;
+}
+
+#WaveformInfo_Title, #WaveformInfo_Key {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px;
+  text-transform: uppercase;
+}
+
+#WaveformInfo_Key_Container {
+  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
 }
 
 #TabControls WPushButton {
