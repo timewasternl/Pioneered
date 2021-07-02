@@ -13,26 +13,26 @@
             <Layout>horizontal</Layout>
             <Size>0me,40max</Size>
             <Children>
+              <SearchBox>
+                <ObjectName>SearchBox</ObjectName>
+                <Size>0me,40max</Size>
+              </SearchBox>
               <PushButton>
                 <ObjectName>SidebarButton</ObjectName>
-                <Size>40p,40p</Size>
+                <Size>75p,40p</Size>
                 <NumberStates>2</NumberStates>
                 <State>
                   <Number>0</Number>
-                  <Text>&#8614;</Text>
+                  <Text>Show &#8612;</Text>
                 </State>
                 <State>
                   <Number>1</Number>
-                  <Text>&#8612;</Text>
+                  <Text>Hide &#8614;</Text>
                 </State>
                 <Connection>
                   <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
                 </Connection>
               </PushButton>
-              <SearchBox>
-                <ObjectName>SearchBox</ObjectName>
-                <Size>0me,40max</Size>
-              </SearchBox>
             </Children>
           </WidgetGroup>
           <WidgetGroup>
@@ -40,6 +40,13 @@
             <Layout>horizontal</Layout>
             <Size>0me,0me</Size>
             <Children>
+              <Library>
+                <ObjectName>Library</ObjectName>
+                <Size>0me,0me</Size>
+                <BgColor>#000</BgColor>
+                <FgColor>#75001a</FgColor>
+                <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
+              </Library>
               <WidgetGroup>
                 <ObjectName>SidebarWrapper</ObjectName>
                 <Layout>horizontal</Layout>
@@ -54,15 +61,21 @@
                   <BindProperty>visible</BindProperty>
                 </Connection>
               </WidgetGroup>
-              <Library>
-                <ObjectName>Library</ObjectName>
-                <Size>0me,0me</Size>
-                <BgColor>#acacac</BgColor>
-                <FgColor>#75001a</FgColor>
-                <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
-              </Library>
             </Children>
           </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>Decks</ObjectName>
+        <Layout>horizontal</Layout>
+        <Size>0me,85max</Size>
+        <Children>
+          <Template src="skin:deck.xml">
+            <SetVariable name="channel">1</SetVariable>
+          </Template>
+          <Template src="skin:deck.xml">
+            <SetVariable name="channel">2</SetVariable>
+          </Template>
         </Children>
       </WidgetGroup>
     </Children>

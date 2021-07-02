@@ -15,6 +15,10 @@ Title bg: #112f5c
 }
 /* END */
 
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 QMenuBar, QMenuBar::item, QMenu, QMenu::item {
   background-color: black;
   color: gray;
@@ -115,16 +119,75 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
   margin: 50% 0;
 }
 
-#Library {
+#LibraryWrapper QScrollBar {
+  background-color: gray;
+}
+
+#LibraryWrapper QScrollBar::handle:horizontal {
+  border: 0;
+}
+
+#LibraryWrapper QScrollBar:horizontal {
+  height: 0;
+  width: 0;
+}
+
+#LibraryWrapper QScrollBar:vertical {
+  border: 0;
+  width: 4px;
+}
+
+#LibraryWrapper QScrollBar::add-page,
+#LibraryWrapper QScrollBar::sub-page {
+  background-color: black;
+}
+
+#LibraryWrapper QScrollBar::add-line,
+#LibraryWrapper QScrollBar::sub-line {
+  height: 0;
+  width: 0;
+}
+
+#LibraryWrapper WTrackTableViewHeader {
+  background-color: #32323c;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#LibraryWrapper QTableView,
+#LibraryWrapper WLibraryTextBrowser {
+  background-color: black;
+  alternate-background-color: #32323c;
+  selection-background-color: white;
+  color: gray;
+  selection-color: black;
+}
+
+#LibraryWrapper WLibrarySidebar {
+  background-color: #32323c;
+  selection-background-color: white;
+  border-left: 4px solid gray;
+  color: white;
+  font-weight: bold;
+  selection-color: black;
+  text-transform: uppercase;
+}
+
+#LibraryWrapper QPushButton,
+#LibraryWrapper QSpinBox,
+#LibraryWrapper QComboBox,
+#LibraryWrapper QComboBox QAbstractScrollArea {
+  background-color: #32323c;
+  color: white;
 }
 
 #Mixxx {
   background-color: black;
 }
 
-#Mixxx WLabel {
+WLabel {
   color: white;
-  font-family: 'Open Sans';
 }
 
 #BeatFX_Container {
@@ -150,8 +213,10 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 #SearchBox {
   background-color: #112f5c;
   border-radius: 0;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
   padding: 4px;
+  text-transform: uppercase;
 }
 
 #SidebarContainer {
@@ -163,7 +228,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
   border: 2px solid lightgray;
   border-radius: 4px;
   color: lightgray;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
   margin: 4px;
 }
@@ -189,7 +254,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #WaveformInfo_Data_Container, #WaveformInfo_Key_Container {
-  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
+  qproperty-layoutAlignment: 'AlignLeft | AlignTop';
 }
 
 #WaveformInfo_Key_Icon {

@@ -12,14 +12,6 @@
             <TooltipId>time</TooltipId>
             <ObjectName>Clock</ObjectName>
           </Time>
-          <Label>
-            <Text>Debug value:</Text>
-          </Label>
-          <Key>
-            <Connection>
-              <ConfigKey>[Channel1],LoadSelectedTrack</ConfigKey>
-            </Connection>
-          </Key>
         </Children>
       </WidgetGroup>
       <WidgetGroup>

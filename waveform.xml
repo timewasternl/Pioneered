@@ -12,7 +12,7 @@
           <WidgetGroup>
             <ObjectName>WaveformInfo_Header</ObjectName>
             <Layout>horizontal</Layout>
-            <Size>0me,0me</Size>
+            <Size>0me,30max</Size>
             <Children>
               <Label>
                 <ObjectName>WaveformInfo_Title</ObjectName>

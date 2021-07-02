@@ -188,6 +188,10 @@
             </Children>
           </WidgetGroup>
         </Children>
+        <Connection>
+          <ConfigKey>[Tab],overview</ConfigKey> <!-- Only show info in overview -->
+          <BindProperty>visible</BindProperty>
+        </Connection>
       </WidgetGroup>
       <WidgetGroup>
         <ObjectName>DeckOverviewContainer</ObjectName>
