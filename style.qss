@@ -4,6 +4,7 @@ Play button: #6ee128
 Cue button: #eb870f
 Slip button: #d73535
 Tabs on top: #c3d541
+Headers: #32323c
 Title bg: #112f5c
 
 */
@@ -33,19 +34,25 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #DeckBPMWrapper {
-  qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  padding-right: 2px;
+  qproperty-layoutAlignment: 'AlignRight | AlignVCenter';
 }
 
 #DeckBPM {
-  border: 2px solid white;
-  border-radius: 5px;
   font-size: 20px;
-  margin: 2px 0;
-  padding: 5px;
+}
+
+#DeckBPMTitleWrapper {
+  padding: 0 2px;
+  qproperty-layoutAlignment: 'AlignRight | AlignVCenter';
 }
 
 #DeckBPMTitle {
-  margin: 0 10px;
+  font-size: 8px;
+  font-weight: bold;
 }
 
 #DeckHeader {
@@ -54,11 +61,17 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #DeckTitle, #DeckTitleNote {
-  font-size: 24px;
+  font-size: 20px;
 }
 
-#DeckChannelTitle, #DeckTrackTimeTitle, #DeckBPMTitle, #DeckPlayingLeft, #DeckPlayingRight {
+#DeckChannelTitle, #DeckTrackTimeTitle, #DeckTempoTitle {
   font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#DeckPlayingLeft, #DeckPlayingRight {
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -68,11 +81,16 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #DeckTrackTime {
-  font-size: 42px;
+  font-size: 36px;
+}
+
+#DeckTrackTime[highlight="1"] {
+  color: transparent;
 }
 
 #DeckTrackNumberContainer {
   margin: 0 4px;
+  qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
 }
 
 #TrackNumberWrapper, #DeckChannelTitleWrapper {
@@ -85,7 +103,8 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #TrackNumber {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #DeckTitleNote {
@@ -94,10 +113,6 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 
 #DeckOverview {
   margin: 50% 0;
-}
-
-#DeckChannelTitle {
-  border: 2px solid transparent;
 }
 
 #Library {
@@ -113,13 +128,13 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #BeatFX_Container {
-  border: 2px solid #222;
+  border: 2px solid #32323c;
   margin-left: 20px;
   qproperty-layoutAlignment: 'AlignCenter | AlignTop';
 }
 
 #BeatFX_Header {
-  background-color: #222;
+  background-color: #32323c;
 }
 
 #BeatFX_Title {
@@ -154,12 +169,13 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #WaveformInfo {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #WaveformInfo_Header {
-  background-color: #222;
-  border-top-right-radius: 25px 50px;
+  background-color: #32323c;
+  border-top-right-radius: 10px 25px;
+  padding-right: 2px;
 }
 
 #WaveformInfo_Header[highlight="1"] {
@@ -167,14 +183,22 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #WaveformInfo_Title, #WaveformInfo_Key {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  margin: 4px;
   text-transform: uppercase;
 }
 
-#WaveformInfo_Key_Container {
+#WaveformInfo_Data_Container, #WaveformInfo_Key_Container {
   qproperty-layoutAlignment: 'AlignLeft | AlignVCenter';
+}
+
+#WaveformInfo_Key_Icon {
+  background-color: white;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 4px;
+  padding: 2px 0;
 }
 
 #TabControls WPushButton {

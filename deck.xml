@@ -28,7 +28,7 @@
           <WidgetGroup>
             <ObjectName>DeckTrackNumberContainer</ObjectName>
             <Layout>vertical</Layout>
-            <Size>100max,0me</Size>
+            <Size>85max,0me</Size>
             <Children>
               <WidgetGroup>
                 <ObjectName>DeckChannelTitleContainer</ObjectName>
@@ -38,7 +38,7 @@
                   <WidgetGroup>
                     <ObjectName>DeckChannelTitleWrapper</ObjectName>
                     <Layout>horizontal</Layout>
-                    <Size>0me,0me</Size>
+                    <Size>0me,25f</Size>
                     <Children>
                       <Label>
                         <ObjectName>DeckPlayingLeft</ObjectName>
@@ -74,12 +74,12 @@
                   <WidgetGroup>
                     <ObjectName>TrackNumberContainer</ObjectName>
                     <Layout>vertical</Layout>
-                    <Size>0me,60max</Size>
+                    <Size>0me,50max</Size>
                     <Children>
                       <WidgetGroup>
                         <ObjectName>TrackNumberTitleWrapper</ObjectName>
                         <Layout>horizontal</Layout>
-                        <Size>10min,0me</Size>
+                        <Size>10min,10max</Size>
                         <Children>
                           <Label>
                             <ObjectName>TrackNumberTitle</ObjectName>
@@ -90,10 +90,11 @@
                       <WidgetGroup>
                         <ObjectName>TrackNumberWrapper</ObjectName>
                         <Layout>horizontal</Layout>
-                        <Size>0me,0me</Size>
+                        <Size>0me,25max</Size>
                         <Children>
                           <Label>
-                            <Size>0me,0me</Size> <!-- Hacky way to align centered -->
+                            <Size>0me,0me</Size>
+                            <!-- Hacky way to align centered -->
                           </Label>
                           <TrackProperty>
                             <ObjectName>TrackNumber</ObjectName>
@@ -104,7 +105,8 @@
                             <Elide>right</Elide>
                           </TrackProperty>
                           <Label>
-                            <Size>0me,0me</Size> <!-- Hacky way to align centered -->
+                            <Size>0me,0me</Size>
+                            <!-- Hacky way to align centered -->
                           </Label>
                         </Children>
                       </WidgetGroup>
@@ -136,6 +138,13 @@
                     <TooltipId>track_time</TooltipId>
                     <NumberOfDigits>6</NumberOfDigits>
                     <Channel><Variable name="channel"/></Channel>
+                    <Connection>
+                      <ConfigKey>[Controls],ShowDurationRemaining</ConfigKey>
+                      <Transform>
+                        <IsEqual>2</IsEqual>
+                      </Transform>
+                      <BindProperty>highlight</BindProperty>
+                    </Connection>
                   </NumberPos>
                 </Children>
               </WidgetGroup>
@@ -144,16 +153,16 @@
           <WidgetGroup>
             <ObjectName>TrackBPMContainer</ObjectName>
             <Layout>vertical</Layout>
-            <Size>100max,0me</Size>
+            <Size>75max,0me</Size>
             <Children>
               <Label>
-                <ObjectName>DeckBPMTitle</ObjectName>
-                <Text>BPM</Text>
+                <ObjectName>DeckTempoTitle</ObjectName>
+                <Text>Tempo</Text>
                 <Size>0me,25f</Size>
               </Label>
               <WidgetGroup>
                 <ObjectName>DeckBPMWrapper</ObjectName>
-                <Layout>horizontal</Layout>
+                <Layout>vertical</Layout>
                 <Size>0me,0me</Size>
                 <Children>
                   <NumberBpm>
@@ -164,6 +173,16 @@
                       <ConfigKey>[Channel<Variable name="channel"/>],visual_bpm</ConfigKey>
                     </Connection>
                   </NumberBpm>
+                  <WidgetGroup>
+                    <ObjectName>DeckBPMTitleWrapper</ObjectName>
+                    <Layout>horizontal</Layout>
+                    <Children>
+                      <Label>
+                        <ObjectName>DeckBPMTitle</ObjectName>
+                        <Text>BPM</Text>
+                      </Label>
+                    </Children>
+                  </WidgetGroup>
                 </Children>
               </WidgetGroup>
             </Children>
@@ -212,6 +231,6 @@
           </Overview>
         </Children>
       </WidgetGroup>
-    </Children>$
+    </Children>
   </WidgetGroup>
 </Template>
