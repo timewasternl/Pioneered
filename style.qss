@@ -208,13 +208,24 @@ WLabel {
 }
 
 #Sampler {
-  background-color: #222;
-  border: 2px solid red;
+  background-color: #32323c;
+  border: 2px solid #d73535;
   border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  margin: 4px;
+  padding: 2px;
+}
+
+#Sampler[value="1"] {
+  background-color: #d73535;
+  color: #32323c;
+}
+
+#Sampler_Info {
   color: white;
   font-size: 10px;
   margin: 4px;
-  padding: 2px;
 }
 
 #SamplersDeck1, #SamplersDeck2 {

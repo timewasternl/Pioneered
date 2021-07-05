@@ -2,18 +2,8 @@
   <WidgetGroup>
     <ObjectName>Topbar</ObjectName>
     <Layout>vertical</Layout>
-    <Size>0me,75f</Size>
+    <Size>0me,50f</Size>
     <Children>
-      <WidgetGroup>
-        <ObjectName>Topbar_Info</ObjectName>
-        <Layout>horizontal</Layout>
-        <Children>
-          <Time>
-            <TooltipId>time</TooltipId>
-            <ObjectName>Clock</ObjectName>
-          </Time>
-        </Children>
-      </WidgetGroup>
       <WidgetGroup>
         <ObjectName>TabControls</ObjectName>
         <Layout>horizontal</Layout>
@@ -28,7 +18,7 @@
             <SetVariable name="config_key">library</SetVariable>
           </Template>
           <Template src="skin:tab.xml">
-            <SetVariable name="tab_name">Samplers</SetVariable>
+            <SetVariable name="tab_name">Sampler</SetVariable>
             <SetVariable name="config_key">samplers</SetVariable>
           </Template>
         </Children>

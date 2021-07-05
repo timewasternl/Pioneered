@@ -19,7 +19,7 @@
               </SearchBox>
               <PushButton>
                 <ObjectName>SidebarButton</ObjectName>
-                <Size>75p,40p</Size>
+                <Size>80p,40p</Size>
                 <NumberStates>2</NumberStates>
                 <State>
                   <Number>0</Number>
@@ -40,20 +40,31 @@
             <Layout>horizontal</Layout>
             <Size>0me,0me</Size>
             <Children>
-              <Library>
-                <ObjectName>Library</ObjectName>
-                <Size>0me,0me</Size>
-                <BgColor>#000</BgColor>
-                <FgColor>#75001a</FgColor>
-                <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
-              </Library>
+              <WidgetGroup>
+                <ObjectName>LibraryWrapper</ObjectName>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <Library>
+                    <ObjectName>Library</ObjectName>
+                    <Size>0me,0me</Size>
+                    <BgColor>#000</BgColor>
+                    <FgColor>#75001a</FgColor>
+                    <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
+                  </Library>
+                </Children>
+                <Connection>
+                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
+                  <BindProperty>visible</BindProperty>
+                  <Transform><Not/></Transform>
+                </Connection>
+              </WidgetGroup>
               <WidgetGroup>
                 <ObjectName>SidebarWrapper</ObjectName>
                 <Layout>horizontal</Layout>
                 <Children>
                   <LibrarySidebar>
                     <ObjectName>LibrarySidebar</ObjectName>
-                    <Size>200f,0me</Size>
+                    <Size>0me,0me</Size>
                   </LibrarySidebar>
                 </Children>
                 <Connection>

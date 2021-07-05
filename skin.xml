@@ -31,7 +31,7 @@
 	  }
 
 		QProgressBar {
-	    background-color: gray;
+	    background-color: #32323c;
 			max-height: 4px;
 	  }
 
