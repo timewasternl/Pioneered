@@ -20,11 +20,25 @@
 
 	<ObjectName>Mixxx</ObjectName>
 	<Style src="skin:style.qss"/>
-	<MinimumSize>620,360</MinimumSize>
+	<MinimumSize>480,360</MinimumSize>
 	<SizePolicy>me,me</SizePolicy>
 	<Layout>vertical</Layout>
 
-	<LaunchImageStyle></LaunchImageStyle>
+	<LaunchImageStyle>
+	  QLabel {
+	    image: url(skin:/images/pioneered_logo.png);
+	    margin-bottom: 12px;
+	  }
+
+		QProgressBar {
+	    background-color: gray;
+			max-height: 4px;
+	  }
+
+	  QProgressBar::chunk {
+	    background-color: #b6294c;
+	  }
+	</LaunchImageStyle>
 
 	<Children>
 		<SingletonDefinition>
@@ -46,9 +60,9 @@
 			</Children>
 		</SingletonDefinition>
 		<SingletonDefinition>
-			<ObjectName>EffectsSamples_Singleton</ObjectName>
+			<ObjectName>Samplers_Singleton</ObjectName>
 			<Children>
-				<Template src="skin:effects_samples.xml"/>
+				<Template src="skin:samplers.xml"/>
 			</Children>
 		</SingletonDefinition>
 
@@ -64,16 +78,16 @@
 						<SingletonContainer>
 							<ObjectName>Topbar_Singleton</ObjectName>
 						</SingletonContainer>
-						<WidgetStack currentpage="[Tab],current" persist="true">
+						<WidgetStack currentpage="[Tab],current">
 							<Children>
-								<SingletonContainer trigger="[Tab],overview" on_hide_select="0">
+								<SingletonContainer trigger="[Tab],overview">
 									<ObjectName>Overview_Singleton</ObjectName>
 								</SingletonContainer>
 								<SingletonContainer trigger="[Tab],library" on_hide_select="0">
 									<ObjectName>Library_Singleton</ObjectName>
 								</SingletonContainer>
-								<SingletonContainer trigger="[Tab],effects_samples" on_hide_select="0">
-									<ObjectName>EffectsSamples_Singleton</ObjectName>
+								<SingletonContainer trigger="[Tab],samplers" on_hide_select="0">
+									<ObjectName>Samplers_Singleton</ObjectName>
 								</SingletonContainer>
 							</Children>
 						</WidgetStack>

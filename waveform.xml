@@ -35,7 +35,7 @@
                 <Children>
                   <Label>
                     <ObjectName>WaveformInfo_Key_Icon</ObjectName>
-                    <Text>♭♯</Text>
+                    <Text>&#9837;&#9839;</Text>
                     <Style>color: black;</Style>
                   </Label>
                   <Key>

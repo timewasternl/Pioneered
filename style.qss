@@ -6,6 +6,7 @@ Slip button: #d73535
 Tabs on top: #c3d541
 Headers: #32323c
 Title bg: #112f5c
+White: #e5e6ea
 
 */
 
@@ -34,11 +35,11 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 #Deck[highlight="1"] {
-  border: 1px solid white;
+  border: 1px solid #e5e6ea;
 }
 
 #DeckBPMWrapper {
-  border: 2px solid white;
+  border: 2px solid #e5e6ea;
   border-radius: 5px;
   margin-bottom: 4px;
   padding-right: 2px;
@@ -150,7 +151,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 
 #LibraryWrapper WTrackTableViewHeader {
   background-color: #32323c;
-  color: white;
+  color: #e5e6ea;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -159,16 +160,16 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 #LibraryWrapper WLibraryTextBrowser {
   background-color: black;
   alternate-background-color: #32323c;
-  selection-background-color: white;
+  selection-background-color: #e5e6ea;
   color: gray;
   selection-color: black;
 }
 
 #LibraryWrapper WLibrarySidebar {
   background-color: #32323c;
-  selection-background-color: white;
+  selection-background-color: #e5e6ea;
   border-left: 4px solid gray;
-  color: white;
+  color: #e5e6ea;
   font-weight: bold;
   selection-color: black;
   text-transform: uppercase;
@@ -179,7 +180,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 #LibraryWrapper QComboBox,
 #LibraryWrapper QComboBox QAbstractScrollArea {
   background-color: #32323c;
-  color: white;
+  color: #e5e6ea;
 }
 
 #Mixxx {
@@ -187,7 +188,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
 }
 
 WLabel {
-  color: white;
+  color: #e5e6ea;
 }
 
 #BeatFX_Container {
@@ -206,8 +207,18 @@ WLabel {
   text-transform: uppercase;
 }
 
-#Clock {
-  font-size: 16px;
+#Sampler {
+  background-color: #222;
+  border: 2px solid red;
+  border-radius: 2px;
+  color: white;
+  font-size: 10px;
+  margin: 4px;
+  padding: 2px;
+}
+
+#SamplersDeck1, #SamplersDeck2 {
+  margin: 0 4px;
 }
 
 #SearchBox {
@@ -244,7 +255,7 @@ WLabel {
 }
 
 #WaveformInfo_Header[highlight="1"] {
-  border: 2px solid white;
+  border: 2px solid #e5e6ea;
 }
 
 #WaveformInfo_Title, #WaveformInfo_Key {
@@ -258,12 +269,11 @@ WLabel {
 }
 
 #WaveformInfo_Key_Icon {
-  background-color: white;
+  background-color: #e5e6ea;
   border-radius: 2px;
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 14px;
   margin: 4px;
-  padding: 2px 0;
+  padding: -6px -6px -3px -2px;
 }
 
 #TabControls WPushButton {

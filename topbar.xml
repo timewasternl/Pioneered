@@ -28,8 +28,8 @@
             <SetVariable name="config_key">library</SetVariable>
           </Template>
           <Template src="skin:tab.xml">
-            <SetVariable name="tab_name">Effects/Samples</SetVariable>
-            <SetVariable name="config_key">effects_samples</SetVariable>
+            <SetVariable name="tab_name">Samplers</SetVariable>
+            <SetVariable name="config_key">samplers</SetVariable>
           </Template>
         </Children>
       </WidgetGroup>

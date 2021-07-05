@@ -1,0 +1,92 @@
+<Template>
+  <WidgetGroup>
+    <ObjectName>Samplers</ObjectName>
+    <Layout>horizontal</Layout>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>SamplersDeck1</ObjectName>
+        <Layout>vertical</Layout>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>SamplersDeck1Row1</ObjectName>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">1</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">2</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">3</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">4</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <ObjectName>SamplersDeck1Row2</ObjectName>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">5</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">6</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">7</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">8</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>SamplersDeck2</ObjectName>
+        <Layout>vertical</Layout>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>SamplersDeck2Row1</ObjectName>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">9</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">10</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">11</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">12</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <ObjectName>SamplersDeck2Row2</ObjectName>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">13</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">14</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">15</SetVariable>
+              </Template>
+              <Template src="skin:sampler.xml">
+                <SetVariable name="sampler">16</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>

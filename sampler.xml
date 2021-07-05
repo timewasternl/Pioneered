@@ -1,0 +1,9 @@
+<Template>
+  <TrackProperty>
+    <ObjectName>Sampler</ObjectName>
+    <Size>60f,60f</Size>
+    <Group>[Sampler<Variable name="sampler"/>]</Group>
+    <Property>titleInfo</Property>
+    <Elide>right</Elide>
+  </TrackProperty>
+</Template>
