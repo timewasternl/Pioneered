@@ -10,6 +10,7 @@ Designed for use with the DDJ-400 with Raspberry Pi standalone mod ([link](https
 * Fully scalable with a minimum resolution of 480x360 (!)
 * Inspired by the Pioneer XDJ interface
 * Small waveform overviews at the bottom
+* Barely any resources = Small footprint!
 
 ## Install
 Drop the `Pioneered` folder in `<MIXXX_FOLDER>/skins` and select it from `Preferences > Interface`.
