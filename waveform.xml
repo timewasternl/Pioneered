@@ -32,6 +32,7 @@
               <WidgetGroup>
                 <ObjectName>WaveformInfo_Key_Container</ObjectName>
                 <Layout>horizontal</Layout>
+                <Size>0me,30f</Size>
                 <Children>
                   <Label>
                     <ObjectName>WaveformInfo_Key_Icon</ObjectName>
@@ -45,6 +46,17 @@
                       <ConfigKey>[Channel<Variable name="channel"/>],visual_key</ConfigKey>
                     </Connection>
                   </Key>
+                </Children>
+              </WidgetGroup>
+              <WidgetGroup>
+                <ObjectName>WaveformInfo_Bars_Container</ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>0me,30f</Size>
+                <Children>
+                  <Label>
+                    <ObjectName>WaveformInfo_Bars</ObjectName>
+                    <Text>--.- Bars</Text>
+                  </Label>
                 </Children>
               </WidgetGroup>
             </Children>

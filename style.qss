@@ -6,6 +6,7 @@ Slip button: #d73535
 Tabs on top: #c3d541
 Headers: #32323c
 Title bg: #112f5c
+Blue: #2d85cd
 White: #e5e6ea
 
 */
@@ -93,9 +94,36 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
   color: transparent;
 }
 
+#DeckTrackTimeMini {
+  font-size: 20px;
+}
+
+#DeckTrackTimeMini[highlight="1"] {
+  color: transparent;
+}
+
 #DeckTrackNumberContainer {
   margin: 0 4px;
   qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
+}
+
+WEffectSelector {
+  background-color: transparent;
+  color: #2d85cd;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px;
+  text-transform: uppercase;
+}
+
+#EffectToggle {
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#EffectToggle[value="1"] {
+  color: #2d85cd;
 }
 
 #TrackNumberWrapper, #DeckChannelTitleWrapper {
@@ -149,10 +177,11 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
   width: 0;
 }
 
-#LibraryWrapper WTrackTableViewHeader {
+#LibraryWrapper WTrackTableViewHeader::section {
   background-color: #32323c;
   color: #e5e6ea;
   font-weight: bold;
+  margin: 2px;
   text-transform: uppercase;
 }
 
@@ -161,7 +190,7 @@ QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
   background-color: black;
   alternate-background-color: #32323c;
   selection-background-color: #e5e6ea;
-  color: gray;
+  color: white;
   selection-color: black;
 }
 
@@ -193,7 +222,7 @@ WLabel {
 
 #BeatFX_Container {
   border: 2px solid #32323c;
-  margin-left: 20px;
+  margin-left: 10px;
   qproperty-layoutAlignment: 'AlignCenter | AlignTop';
 }
 
@@ -212,14 +241,13 @@ WLabel {
   border: 2px solid #d73535;
   border-radius: 2px;
   color: white;
-  font-size: 12px;
+  font-size: 24px;
   margin: 4px;
   padding: 2px;
 }
 
 #Sampler[value="1"] {
   background-color: #d73535;
-  color: #32323c;
 }
 
 #Sampler_Info {
@@ -269,13 +297,17 @@ WLabel {
   border: 2px solid #e5e6ea;
 }
 
-#WaveformInfo_Title, #WaveformInfo_Key {
+#WaveformInfo_Title,
+#WaveformInfo_Key,
+#WaveformInfo_Bars {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-#WaveformInfo_Data_Container, #WaveformInfo_Key_Container {
+#WaveformInfo_Data_Container,
+#WaveformInfo_Key_Container,
+#WaveformInfo_Bars_Container {
   qproperty-layoutAlignment: 'AlignLeft | AlignTop';
 }
 

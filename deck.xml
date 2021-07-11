@@ -129,23 +129,41 @@
               <WidgetGroup>
                 <ObjectName>DeckTrackTimeWrapper</ObjectName>
                 <Layout>horizontal</Layout>
-                <Size>200me,0me</Size>
+                <Size>0me,0me</Size>
                 <Align>left</Align>
                 <Children>
-                  <NumberPos>
-                    <ObjectName>DeckTrackTime</ObjectName>
-                    <Size>200max,0me</Size>
-                    <TooltipId>track_time</TooltipId>
-                    <NumberOfDigits>6</NumberOfDigits>
-                    <Channel><Variable name="channel"/></Channel>
-                    <Connection>
-                      <ConfigKey>[Controls],ShowDurationRemaining</ConfigKey>
-                      <Transform>
-                        <IsEqual>2</IsEqual>
-                      </Transform>
-                      <BindProperty>highlight</BindProperty>
-                    </Connection>
-                  </NumberPos>
+                  <SizeAwareStack>
+                    <Children>
+                      <NumberPos>
+                        <ObjectName>DeckTrackTimeMini</ObjectName>
+                        <MaximumSize>150,-1</MaximumSize>
+                        <TooltipId>track_time</TooltipId>
+                        <NumberOfDigits>6</NumberOfDigits>
+                        <Channel><Variable name="channel"/></Channel>
+                        <Connection>
+                          <ConfigKey>[Controls],ShowDurationRemaining</ConfigKey>
+                          <Transform>
+                            <IsEqual>2</IsEqual>
+                          </Transform>
+                          <BindProperty>highlight</BindProperty>
+                        </Connection>
+                      </NumberPos>
+                      <NumberPos>
+                        <ObjectName>DeckTrackTime</ObjectName>
+                        <MinimumSize>150,-1</MinimumSize>
+                        <TooltipId>track_time</TooltipId>
+                        <NumberOfDigits>6</NumberOfDigits>
+                        <Channel><Variable name="channel"/></Channel>
+                        <Connection>
+                          <ConfigKey>[Controls],ShowDurationRemaining</ConfigKey>
+                          <Transform>
+                            <IsEqual>2</IsEqual>
+                          </Transform>
+                          <BindProperty>highlight</BindProperty>
+                        </Connection>
+                      </NumberPos>
+                    </Children>
+                  </SizeAwareStack>
                 </Children>
               </WidgetGroup>
             </Children>
@@ -189,7 +207,8 @@
           </WidgetGroup>
         </Children>
         <Connection>
-          <ConfigKey>[Tab],overview</ConfigKey> <!-- Only show info in overview -->
+          <ConfigKey>[Tab],overview</ConfigKey>
+          <!-- Only show info in overview -->
           <BindProperty>visible</BindProperty>
         </Connection>
       </WidgetGroup>
