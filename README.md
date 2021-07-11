@@ -1,5 +1,3 @@
-# Pioneered
-
 ![logo](https://github.com/timewasternl/Pioneered/blob/master/images/pioneered_logo.png?raw=true)
 
 Pioneer inspired theme for smaller screen resolutions. It has been designed to 'extend' a MIDI controller.
