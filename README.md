@@ -19,3 +19,4 @@ Drop the `Pioneered` folder in `<MIXXX_FOLDER>/skins` and select it from `Prefer
 ## Contributors
 * [timewasternl](https://github.com/timewasternl)
 * [GorgiAstro](https://github.com/GorgiAstro)
+* [BvOBart](https://github.com/bvobart)
