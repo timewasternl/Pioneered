@@ -73,11 +73,67 @@
         <SignalLowColor>#007de1</SignalLowColor>
         <SignalMidColor>#007de1</SignalMidColor>
         <SignalHighColor>#007de1</SignalHighColor>
+	<DefaultMark>
+          <Align>bottom|right</Align>
+          <Color>#FF0000</Color>
+          <TextColor>#FFFFFF</TextColor>
+         <Text> %1 </Text>
+        </DefaultMark>
         <Mark>
           <Control>cue_point</Control>
           <Text>CUE</Text>
-          <Color>#eb870f</Color>
-          <TextColor>#eb870f</TextColor>
+          <Color>#ff6000</Color>
+          <TextColor>#ff6000</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_1_position</Control>
+	  <Text></Text>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_2_position</Control>
+	  <Text></Text>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_3_position</Control>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_4_position</Control>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_5_position</Control>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_6_position</Control>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_7_position</Control>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
+          <Align>bottom</Align>
+        </Mark>
+        <Mark>
+          <Control>hotcue_8_position</Control>
+          <Color>#ff6000</Color>
+          <TextColor>#00ff00</TextColor>
           <Align>bottom</Align>
         </Mark>
         <Mark>
