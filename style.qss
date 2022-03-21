@@ -17,10 +17,6 @@ White: #e5e6ea
 }
 /* END */
 
-#Mixxx {
-  background-color: black;
-}
-
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -33,38 +29,6 @@ QMenuBar, QMenuBar::item, QMenu, QMenu::item {
 QMenuBar::item:pressed, QMenu::item:selected, QMenu::item:pressed {
     background-color: rgba(255,255,255,0.2);
 }
-
-/************************************************************************/
-/*     Buttons                                                          */
-/************************************************************************/
-
-WPushButton {
-  color: #e5e6ea;
-  background-color: transparent;
-  border: 1px solid #32323c;
-  border-radius: 2px;
-  outline: none;
-}
-
-WPushButton:hover {
-  border: 1px solid #5F5F5F;
-}
-
-WPushButton[value="1"] {
-  color: #e5e6ea;
-  border: 1px solid #5F5F5F;
-  background-color: #32323c;
-}
-
-WPushButton[value="1"]:hover {
-  border: 1px solid #4B4B4B;
-  background-color: #30303a;
-}
-
-/************************************************************************/
-/*     Deck                                                             */
-/************************************************************************/
-
 
 #Deck {
   border: 1px solid transparent;
@@ -102,16 +66,8 @@ WPushButton[value="1"]:hover {
   padding: 2px;
 }
 
-#DeckOverview {
-  margin: 50% 0;
-}
-
 #DeckTitle, #DeckTitleNote {
   font-size: 20px;
-}
-
-#DeckTitleNote {
-  margin: 0 2px;
 }
 
 #DeckChannelTitle, #DeckTrackTimeTitle, #DeckTempoTitle {
@@ -151,11 +107,7 @@ WPushButton[value="1"]:hover {
   qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
 }
 
-/************************************************************************/
-/*     Effects                                                          */
-/************************************************************************/
-
-WEffectSelector {
+WEffectChainPresetSelector {
   background-color: transparent;
   color: #2d85cd;
   font-size: 14px;
@@ -188,9 +140,13 @@ WEffectSelector {
   font-weight: bold;
 }
 
-/************************************************************************/
-/*     Library                                                          */
-/************************************************************************/
+#DeckTitleNote {
+  margin: 0 2px;
+}
+
+#DeckOverview {
+  margin: 50% 0;
+}
 
 #LibraryWrapper QScrollBar {
   background-color: gray;
@@ -256,23 +212,13 @@ WEffectSelector {
   color: #e5e6ea;
 }
 
+#Mixxx {
+  background-color: black;
+}
+
 WLabel {
   color: #e5e6ea;
 }
-
-/* Library Search */
-#SearchBox {
-  background-color: #112f5c;
-  border-radius: 0;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 4px;
-  text-transform: uppercase;
-}
-
-/************************************************************************/
-/*     BeatFX                                                           */
-/************************************************************************/
 
 #BeatFX_Container {
   border: 2px solid #32323c;
@@ -290,6 +236,39 @@ WLabel {
   text-transform: uppercase;
 }
 
+#Sampler {
+  background-color: #32323c;
+  border: 2px solid #d73535;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+  margin: 4px;
+  padding: 2px;
+}
+
+#Sampler[value="1"] {
+  background-color: #d73535;
+}
+
+#Sampler_Info {
+  color: white;
+  font-size: 10px;
+  margin: 4px;
+}
+
+#SamplersDeck1, #SamplersDeck2 {
+  margin: 0 4px;
+}
+
+#SearchBox {
+  background-color: #112f5c;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px;
+  text-transform: uppercase;
+}
+
 #SidebarContainer {
   background-color: #112f5c;
 }
@@ -303,10 +282,6 @@ WLabel {
   font-weight: bold;
   margin: 4px;
 }
-
-/************************************************************************/
-/*     Waveforms                                                        */
-/************************************************************************/
 
 #WaveformInfo {
   margin-right: 10px;
@@ -344,18 +319,6 @@ WLabel {
   padding: -6px -6px -3px -2px;
 }
 
-#WaveformInfo_KeylockButton {
-  image: url(skin:icons/keylock.svg) no-repeat center center;
-}
-
-#WaveformInfo_QuantizeButton {
-  image: url(skin:icons/quantize.svg) no-repeat center center;
-}
-
-/************************************************************************/
-/*     Tabs                                                             */
-/************************************************************************/
-
 #TabControls WPushButton {
   background-color: black;
   font-weight: bold;
@@ -372,32 +335,4 @@ WLabel {
 #TabControls WPushButton[value="1"] {
   border: 2px solid #c3d541;
   color: #c3d541;
-}
-
-/************************************************************************/
-/*     Samplers                                                         */
-/************************************************************************/
-
-#Sampler {
-  background-color: #32323c;
-  border: 2px solid #d73535;
-  border-radius: 2px;
-  color: white;
-  font-size: 24px;
-  margin: 4px;
-  padding: 2px;
-}
-
-#Sampler[value="1"] {
-  background-color: #d73535;
-}
-
-#Sampler_Info {
-  color: white;
-  font-size: 10px;
-  margin: 4px;
-}
-
-#SamplersDeck1, #SamplersDeck2 {
-  margin: 0 4px;
 }

@@ -29,7 +29,39 @@
               <WidgetGroup>
                 <ObjectName>BeatFX_Header</ObjectName>
                 <Layout>horizontal</Layout>
-                <Size>0me,25p</Size>
+                <Size>0me,10p</Size>
+                <Children>
+                  <Label>
+                    <ObjectName>BeatFX_Title</ObjectName>
+                    <Text>Color FX L</Text>
+                  </Label>
+                </Children>
+              </WidgetGroup>
+               <Template src="skin:ceffectl.xml">
+                <SetVariable name="rack">1</SetVariable>
+                <SetVariable name="unit">1</SetVariable>
+                <SetVariable name="effect">1</SetVariable>
+              </Template>
+              <WidgetGroup>
+                <ObjectName>BeatFX_Header</ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>0me,10p</Size>
+                <Children>
+                  <Label>
+                    <ObjectName>BeatFX_Title</ObjectName>
+                    <Text>Color FX R</Text>
+                  </Label>
+                </Children>
+              </WidgetGroup>
+               <Template src="skin:ceffectr.xml">
+                <SetVariable name="rack">1</SetVariable>
+                <SetVariable name="unit">1</SetVariable>
+                <SetVariable name="effect">1</SetVariable>
+              </Template>
+ 	      <WidgetGroup>
+                <ObjectName>BeatFX_Header</ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>20me,10p</Size>
                 <Children>
                   <Label>
                     <ObjectName>BeatFX_Title</ObjectName>
@@ -37,7 +69,7 @@
                   </Label>
                 </Children>
               </WidgetGroup>
-              <Template src="skin:effect.xml">
+              <Template src="skin:beffect.xml">
                 <SetVariable name="rack">1</SetVariable>
                 <SetVariable name="unit">1</SetVariable>
                 <SetVariable name="effect">1</SetVariable>
