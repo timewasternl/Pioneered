@@ -58,6 +58,29 @@
                   </Label>
                 </Children>
               </WidgetGroup>
+
+              <WidgetGroup>
+                <ObjectName>WaveformInfo_Controls</ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>0me,30f</Size>
+                <Children>
+
+                  <Template src="skin:templates/toggle_button.xml">
+                    <SetVariable name="TooltipId">quantize</SetVariable>
+                    <SetVariable name="ObjectName">WaveformInfo_QuantizeButton</SetVariable>
+                    <SetVariable name="Size">30me,30f</SetVariable>
+                    <SetVariable name="LeftConnectionControl">[Channel<Variable name="channel"/>],quantize</SetVariable>
+                  </Template>
+
+                  <Template src="skin:templates/toggle_button.xml">
+                    <SetVariable name="TooltipId">keylock</SetVariable>
+                    <SetVariable name="ObjectName">WaveformInfo_KeylockButton</SetVariable>
+                    <SetVariable name="Size">30me,30f</SetVariable>
+                    <SetVariable name="LeftConnectionControl">[Channel<Variable name="channel"/>],keylock</SetVariable>
+                  </Template>
+
+                </Children>
+              </WidgetGroup>
             </Children>
           </WidgetGroup>
         </Children>
