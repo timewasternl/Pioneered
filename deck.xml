@@ -231,6 +231,38 @@
               <Control>cue_point</Control>
               <Color>#eb870f</Color>
             </Mark>
+	    <Mark>
+              <Control>hotcue_1_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_2_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_3_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_4_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_5_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_6_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_7_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
+            <Mark>
+              <Control>hotcue_8_position</Control>
+              <Color>#eb870f</Color>
+            </Mark>
             <Mark>
               <Control>loop_start_position</Control>
               <Color>#6ee128</Color>
