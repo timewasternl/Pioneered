@@ -15,6 +15,7 @@ Designed for use with the DDJ-400 with Raspberry Pi standalone mod ([link](https
 
 ## Install
 Drop the `Pioneered` folder in `<MIXXX_FOLDER>/skins` and select it from `Preferences > Interface`.
+
 Alternatively, you can use the `install.linux.sh` script to automatically install the skin to `.mixxx/skins`.
 
 ## Contributors
