@@ -20,7 +20,7 @@
 
 	<ObjectName>Mixxx</ObjectName>
 	<Style src="skin:style.qss"/>
-	<MinimumSize>480,360</MinimumSize>
+	<MinimumSize>480,420</MinimumSize>
 	<SizePolicy>me,me</SizePolicy>
 	<Layout>vertical</Layout>
 

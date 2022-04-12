@@ -58,7 +58,7 @@
                 <SetVariable name="unit">1</SetVariable>
                 <SetVariable name="effect">1</SetVariable>
               </Template>
- 	      <WidgetGroup>
+ 	            <WidgetGroup>
                 <ObjectName>BeatFX_Header</ObjectName>
                 <Layout>horizontal</Layout>
                 <Size>20me,10p</Size>

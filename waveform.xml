@@ -51,7 +51,7 @@
               <WidgetGroup>
                 <ObjectName>WaveformInfo_Bars_Container</ObjectName>
                 <Layout>horizontal</Layout>
-                <Size>0me,30f</Size>
+                <Size>0me,10f</Size>
                 <Children>
                   <Label>
                     <ObjectName>WaveformInfo_Bars</ObjectName>
