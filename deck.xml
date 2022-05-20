@@ -169,6 +169,46 @@
             </Children>
           </WidgetGroup>
           <WidgetGroup>
+            <ObjectName>TrackBPMRangeContainer</ObjectName>
+            <Layout>vertical</Layout>
+            <Size>65max,40max</Size>
+            <Children>              
+              <WidgetGroup>
+                <ObjectName>DeckBPMRangePercent</ObjectName>
+                <Size>30me,16f</Size>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <Label>
+                    <ObjectName>BPMRangePlusMinus</ObjectName>
+                    <Text>&#177;</Text>
+                  </Label>
+                  <RateRange>
+                    <TooltipId>rate_range_display</TooltipId>
+                    <ObjectName>RateDisplay</ObjectName>
+                    <Channel><Variable name="channel" /></Channel>
+                    <Display>range</Display>
+                  </RateRange>
+                </Children>
+              </WidgetGroup>
+              <WidgetGroup>
+                <ObjectName>RateDisplay<Variable name="channel"/></ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>0me,0me</Size>
+                <Children>
+                  <NumberRate>
+                    <TooltipId>rate_display</TooltipId>
+                    <Channel><Variable name="channel"/></Channel>
+                    <NumberOfDigits>1</NumberOfDigits>
+                  </NumberRate>
+                  <Label>
+                    <ObjectName>BPMPercent</ObjectName>
+                    <Text>%</Text>
+                  </Label>
+                </Children>
+              </WidgetGroup>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
             <ObjectName>TrackBPMContainer</ObjectName>
             <Layout>vertical</Layout>
             <Size>75max,0me</Size>

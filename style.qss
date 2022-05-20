@@ -97,6 +97,21 @@ WPushButton[value="1"]:hover {
   font-weight: bold;
 }
 
+#TrackBPMRangeContainer {
+  padding: 5px;
+  qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
+}
+
+#DeckBPMRangePercent {
+  background-color: #222222;
+  padding: 0px;
+}
+
+#BPMRangePlusMinus, #RateDisplay {
+    font-size: 12px;
+    font-weight: bold;
+}
+
 #DeckHeader {
   background-color: #112f5c;
   padding: 2px;
