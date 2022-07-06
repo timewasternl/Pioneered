@@ -170,13 +170,17 @@ WPushButton[value="1"]:hover {
 /*     Effects                                                          */
 /************************************************************************/
 
-WEffectChainPresetSelector {
+WEffectSelector {
   background-color: transparent;
   color: #2d85cd;
   font-size: 14px;
   font-weight: bold;
   padding: 4px;
   text-transform: uppercase;
+}
+
+#EffectMeter {
+  padding: 0px 1px 0px 1px;
 }
 
 #EffectToggle {
@@ -291,7 +295,7 @@ WLabel {
 
 #BeatFX_Container {
   border: 2px solid #32323c;
-  margin-left: 10px;
+  margin-left: 4px;
   qproperty-layoutAlignment: 'AlignCenter | AlignTop';
 }
 
@@ -303,6 +307,16 @@ WLabel {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#BeatFX_Unit[highlight="0"] {
+  padding: 1px;
+  border: 1px solid #32323c;
+}
+
+#BeatFX_Unit[highlight="1"] {
+  padding: 1px;
+  border: 1px solid #2d85cd;
 }
 
 #SidebarContainer {
