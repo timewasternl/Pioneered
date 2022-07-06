@@ -20,6 +20,16 @@
         <SetVariable name="unit">1</SetVariable>
         <SetVariable name="effect">1</SetVariable>
       </Template>
+      <Template src="skin:effect.xml">
+        <SetVariable name="rack">1</SetVariable>
+        <SetVariable name="unit">1</SetVariable>
+        <SetVariable name="effect">2</SetVariable>
+      </Template>
+      <Template src="skin:effect.xml">
+        <SetVariable name="rack">1</SetVariable>
+        <SetVariable name="unit">1</SetVariable>
+        <SetVariable name="effect">3</SetVariable>
+      </Template>
     </Children>
   </WidgetGroup>
 </Template>
