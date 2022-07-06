@@ -1,0 +1,25 @@
+<Template>
+  <WidgetGroup>
+    <ObjectName>BeatFX_Container</ObjectName>
+    <Layout>vertical</Layout>
+    <Size>150max,0me</Size>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>BeatFX_Header</ObjectName>
+        <Layout>horizontal</Layout>
+        <Size>20me,10p</Size>
+        <Children>
+          <Label>
+            <ObjectName>BeatFX_Title</ObjectName>
+            <Text>Beat FX</Text>
+          </Label>
+        </Children>
+      </WidgetGroup>
+      <Template src="skin:effect.xml">
+        <SetVariable name="rack">1</SetVariable>
+        <SetVariable name="unit">1</SetVariable>
+        <SetVariable name="effect">1</SetVariable>
+      </Template>
+    </Children>
+  </WidgetGroup>
+</Template>
