@@ -191,6 +191,7 @@ WPushButton[value="1"]:hover {
 
 #BeatFX_Header {
   background-color: #32323c;
+  qproperty-layoutAlignment: 'AlignHCenter | AlignVCenter';
 }
 
 #BeatFX_Title {
