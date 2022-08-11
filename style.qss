@@ -65,7 +65,6 @@ WPushButton[value="1"]:hover {
 /*     Deck                                                             */
 /************************************************************************/
 
-
 #Deck {
   border: 1px solid transparent;
   border-radius: 2px;
@@ -166,29 +165,6 @@ WPushButton[value="1"]:hover {
   qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
 }
 
-/************************************************************************/
-/*     Effects                                                          */
-/************************************************************************/
-
-WEffectChainPresetSelector {
-  background-color: transparent;
-  color: #2d85cd;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 4px;
-  text-transform: uppercase;
-}
-
-#EffectToggle {
-  color: gray;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#EffectToggle[value="1"] {
-  color: #2d85cd;
-}
-
 #TrackNumberWrapper, #DeckChannelTitleWrapper {
   qproperty-layoutAlignment: 'AlignHCenter | AlignVCenter';
 }
@@ -201,6 +177,64 @@ WEffectChainPresetSelector {
 #TrackNumber {
   font-size: 20px;
   font-weight: bold;
+}
+
+/************************************************************************/
+/*     BeatFX                                                           */
+/************************************************************************/
+
+#BeatFX_Container {
+  border: 2px solid #32323c;
+  margin-left: 4px;
+  qproperty-layoutAlignment: 'AlignCenter | AlignTop';
+}
+
+#BeatFX_Header {
+  background-color: #32323c;
+  qproperty-layoutAlignment: 'AlignHCenter | AlignVCenter';
+}
+
+#BeatFX_Title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#BeatFX_Unit[highlight="0"] {
+  padding: 1px;
+  border: 1px solid #32323c;
+}
+
+#BeatFX_Unit[highlight="1"] {
+  padding: 1px;
+  border: 1px solid #2d85cd;
+}
+
+/************************************************************************/
+/*     Effects                                                          */
+/************************************************************************/
+
+WEffectSelector {
+  background-color: transparent;
+  color: #2d85cd;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px;
+  text-transform: uppercase;
+}
+
+#EffectMeter {
+  padding: 0px 1px 0px 1px;
+}
+
+#EffectToggle {
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#EffectToggle[value="1"] {
+  color: #2d85cd;
 }
 
 /************************************************************************/
@@ -285,30 +319,10 @@ WLabel {
   text-transform: uppercase;
 }
 
-/************************************************************************/
-/*     BeatFX                                                           */
-/************************************************************************/
-
-#BeatFX_Container {
-  border: 2px solid #32323c;
-  margin-left: 10px;
-  qproperty-layoutAlignment: 'AlignCenter | AlignTop';
-}
-
-#BeatFX_Header {
-  background-color: #32323c;
-}
-
-#BeatFX_Title {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
+/* Sidebar (hide/show) */
 #SidebarContainer {
   background-color: #112f5c;
 }
-
 #SidebarButton {
   background-color: rgba(0,0,0,0.2);
   border: 2px solid lightgray;

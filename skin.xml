@@ -2,7 +2,7 @@
 	<manifest>
 		<title>Pioneered</title>
 		<author>Sven Boekelder</author>
-		<version>0.0.1</version>
+		<version>0.5.0</version>
 		<description>Pioneer inspired theme for smaller screen resolutions</description>
 		<language>*</language>
 		<license>GPL</license>
