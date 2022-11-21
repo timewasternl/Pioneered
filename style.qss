@@ -333,6 +333,17 @@ WLabel {
   margin: 4px;
 }
 
+/* Checkbox in library "Played" column */
+#LibraryWrapper WTrackTableView::indicator:unchecked {
+  image: url(skin:icons/library_checkbox.svg);
+}
+#LibraryWrapper WTrackTableView::indicator:hover {
+  background-color: #2d85cd;
+}
+#LibraryWrapper WTrackTableView::indicator:checked {
+  image: url(skin:icons/library_checkbox_checked.svg);
+}
+
 /************************************************************************/
 /*     Waveforms                                                        */
 /************************************************************************/
