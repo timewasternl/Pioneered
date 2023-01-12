@@ -8,7 +8,7 @@ Designed for use with the DDJ-400 with Raspberry Pi standalone mod ([link](https
 
 ## Features
 * Tabbed view: Overview, Browse and Samples
-* Fully scalable with a minimum resolution of 480x360 (!)
+* Fully scalable with a minimum resolution of 480x420 (!)
 * Inspired by the Pioneer XDJ interface
 * Small waveform overviews at the bottom
 * Keylock and Quantize buttons
