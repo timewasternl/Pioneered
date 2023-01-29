@@ -93,9 +93,9 @@
         <BeatColor>#40ffffff</BeatColor>
         <PlayPosColor>#fff</PlayPosColor>
         <SignalColor>#32323c</SignalColor>
-        <SignalLowColor>#007de1</SignalLowColor>
-        <SignalMidColor>#007de1</SignalMidColor>
-        <SignalHighColor>#007de1</SignalHighColor>
+        <SignalLowColor>#004ee4</SignalLowColor>
+        <SignalMidColor>#c95a00</SignalMidColor>
+        <SignalHighColor>#f6e9d3</SignalHighColor>
 	<DefaultMark>
           <Align>bottom|right</Align>
           <Color>#FF0000</Color>
