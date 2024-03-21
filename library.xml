@@ -5,41 +5,24 @@
     <Children>
       <WidgetGroup>
         <ObjectName>LibraryWrapper</ObjectName>
-        <Layout>vertical</Layout>
+        <Layout>horizontal</Layout>
         <Size>0me,0me</Size>
         <Children>
-          <WidgetGroup>
-            <ObjectName>SidebarContainer</ObjectName>
-            <Layout>horizontal</Layout>
-            <Size>0me,40max</Size>
-            <Children>
-              <SearchBox>
-                <ObjectName>SearchBox</ObjectName>
-                <Size>0me,40max</Size>
-              </SearchBox>
-              <PushButton>
-                <ObjectName>SidebarButton</ObjectName>
-                <Size>80p,40p</Size>
-                <NumberStates>2</NumberStates>
-                <State>
-                  <Number>0</Number>
-                  <Text>Show &#8612;</Text>
-                </State>
-                <State>
-                  <Number>1</Number>
-                  <Text>Hide &#8614;</Text>
-                </State>
-                <Connection>
-                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
-                </Connection>
-              </PushButton>
-            </Children>
-          </WidgetGroup>
           <WidgetGroup>
             <SizePolicy>me,me</SizePolicy>
             <Layout>horizontal</Layout>
             <Size>0me,0me</Size>
             <Children>
+              <WidgetGroup>
+                <ObjectName>SidebarWrapper</ObjectName>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <LibrarySidebar>
+                    <ObjectName>LibrarySidebar</ObjectName>
+                    <Size>0me,0me</Size>
+                  </LibrarySidebar>
+                </Children>
+              </WidgetGroup>
               <WidgetGroup>
                 <ObjectName>LibraryWrapper</ObjectName>
                 <Layout>horizontal</Layout>
@@ -52,25 +35,6 @@
                     <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
                   </Library>
                 </Children>
-                <Connection>
-                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
-                  <BindProperty>visible</BindProperty>
-                  <Transform><Not/></Transform>
-                </Connection>
-              </WidgetGroup>
-              <WidgetGroup>
-                <ObjectName>SidebarWrapper</ObjectName>
-                <Layout>horizontal</Layout>
-                <Children>
-                  <LibrarySidebar>
-                    <ObjectName>LibrarySidebar</ObjectName>
-                    <Size>0me,0me</Size>
-                  </LibrarySidebar>
-                </Children>
-                <Connection>
-                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
-                  <BindProperty>visible</BindProperty>
-                </Connection>
               </WidgetGroup>
             </Children>
           </WidgetGroup>

@@ -17,10 +17,6 @@
             <SetVariable name="tab_name">Browse</SetVariable>
             <SetVariable name="config_key">library</SetVariable>
           </Template>
-          <Template src="skin:tab.xml">
-            <SetVariable name="tab_name">Sampler</SetVariable>
-            <SetVariable name="config_key">samplers</SetVariable>
-          </Template>
         </Children>
       </WidgetGroup>
     </Children>

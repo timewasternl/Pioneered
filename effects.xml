@@ -30,6 +30,10 @@
           </VuMeter>
         </Children>
       </WidgetGroup>
+                <Label>
+            <ObjectName>Deck_1</ObjectName>
+            <Text>Deck1</Text>
+          </Label>
       <Template src="skin:effect.xml">
         <SetVariable name="rack">1</SetVariable>
         <SetVariable name="unit">1</SetVariable>
@@ -42,6 +46,25 @@
       </Template>
       <Template src="skin:effect.xml">
         <SetVariable name="rack">1</SetVariable>
+        <SetVariable name="unit">1</SetVariable>
+        <SetVariable name="effect">3</SetVariable>
+      </Template>
+      <Label>
+        <ObjectName>Deck_2</ObjectName>
+        <Text>Deck 2</Text>
+          </Label>
+      <Template src="skin:effect.xml">
+        <SetVariable name="rack">2</SetVariable>
+        <SetVariable name="unit">1</SetVariable>
+        <SetVariable name="effect">1</SetVariable>
+      </Template>
+      <Template src="skin:effect.xml">
+        <SetVariable name="rack">2</SetVariable>
+        <SetVariable name="unit">1</SetVariable>
+        <SetVariable name="effect">2</SetVariable>
+      </Template>
+      <Template src="skin:effect.xml">
+        <SetVariable name="rack">2</SetVariable>
         <SetVariable name="unit">1</SetVariable>
         <SetVariable name="effect">3</SetVariable>
       </Template>

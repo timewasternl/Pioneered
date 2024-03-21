@@ -8,7 +8,6 @@
 		<license>GPL</license>
 		<attributes>
 			<attribute config_key="[Master],num_decks">2</attribute>
-			<attribute config_key="[Master],num_samplers">16</attribute>
 			<attribute persist="true" config_key="[Master],maximize_library">0</attribute>
 			<attribute persist="true" config_key="[Master],skin_settings">0</attribute>
 			<attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
@@ -59,12 +58,6 @@
 				<Template src="skin:library.xml"/>
 			</Children>
 		</SingletonDefinition>
-		<SingletonDefinition>
-			<ObjectName>Samplers_Singleton</ObjectName>
-			<Children>
-				<Template src="skin:samplers.xml"/>
-			</Children>
-		</SingletonDefinition>
 
 		<WidgetGroup>
 			<ObjectName>SkinContainer</ObjectName>
@@ -85,9 +78,6 @@
 								</SingletonContainer>
 								<SingletonContainer trigger="[Tab],library" on_hide_select="0">
 									<ObjectName>Library_Singleton</ObjectName>
-								</SingletonContainer>
-								<SingletonContainer trigger="[Tab],samplers" on_hide_select="0">
-									<ObjectName>Samplers_Singleton</ObjectName>
 								</SingletonContainer>
 							</Children>
 						</WidgetStack>
