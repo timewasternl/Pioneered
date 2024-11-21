@@ -372,7 +372,8 @@ WLabel {
 
 #WaveformInfo_Data_Container,
 #WaveformInfo_Key_Container,
-#WaveformInfo_Bars_Container {
+#WaveformInfo_Bars_Container,
+#WaveformInfo_Loopsize_Container {
   qproperty-layoutAlignment: 'AlignLeft | AlignTop';
 }
 
@@ -382,6 +383,35 @@ WLabel {
   font-size: 14px;
   margin: 4px;
   padding: -6px -6px -3px -2px;
+}
+
+#WaveformInfo_Loop_Icon {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2px;
+}
+
+#WaveformInfo_BeatloopSizeSpinBox {
+  margin: 3px;
+  padding: -4px -4px 0px -8px;
+}
+
+WBeatSpinBox {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #000000;
+}
+
+WBeatSpinBox::down-arrow,
+WBeatSpinBox::up-arrow,
+WBeatSpinBox::down-button,
+WBeatSpinBox::up-button {
+  width: 0px;
+  height: 0px;
+  color: #000000;
+  background-color: #000000;
 }
 
 #WaveformInfo_KeylockButton {

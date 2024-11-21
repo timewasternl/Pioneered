@@ -58,7 +58,23 @@
                   </Label>
                 </Children>
               </WidgetGroup>
-
+              <WidgetGroup>
+                <ObjectName>WaveformInfo_Loopsize_Container</ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>0me,25f</Size>
+                <SetVariable name="beatloop_size_chan">[Channel<Variable name="channel"/>], beatloop_size</SetVariable>
+                <Children>
+                  <Label>
+                    <ObjectName>WaveformInfo_Loop_Icon</ObjectName>
+                    <Text>&#8635;</Text>
+                  </Label>
+                  <BeatSpinBox>
+                    <ObjectName>WaveformInfo_BeatloopSizeSpinBox</ObjectName>
+                    <TooltipId>beatloop_size</TooltipId>
+                    <Value>[Channel<Variable name="channel"/>],beatloop_size</Value>
+                  </BeatSpinBox>
+                </Children>
+              </WidgetGroup>
               <WidgetGroup>
                 <ObjectName>WaveformInfo_Controls</ObjectName>
                 <Layout>horizontal</Layout>
